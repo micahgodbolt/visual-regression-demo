@@ -14,7 +14,8 @@ phantomcss.init({
 /*
   The test scenario
 */
-casper.start( 'http://nat.godbolt.me/' );
+casper.start( 'http://www.godbolt.me/p2/page1.html' );
+//casper.start( 'http://www.godbolt.me/p2/page2.html' );
 
 casper.viewport(1024, 768);
 
