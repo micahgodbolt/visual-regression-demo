@@ -11,9 +11,10 @@
 
 #### Download Wraith
 ```
-gem install wraith
+  gem install wraith
 ```
 
+wraith capture wraith.yaml
 
 
 
@@ -21,3 +22,9 @@ gem install wraith
 
 ## [PhantomCSS](https://github.com/Huddle/PhantomCSS)
 
+#### Download some dependancies
+```
+  git@github.com:Huddle/PhantomCSS.git
+  brew install casperjs
+```
+casperjs test phantom.js

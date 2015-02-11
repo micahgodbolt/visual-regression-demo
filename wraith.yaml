@@ -7,25 +7,21 @@ browser:
 snap_file: "javascript/snap.js"
 
 # Type the name of the directory that shots will be stored in
-directory: 'shots'
+directory: 'wraith_imgs'
 
 # Add only 2 domains, key will act as a label
 domains:
-  english: "http://www.godbolt.me/p2/page1.html"
-  russian: "http://www.godbolt.me/p2/page2.html"
+  baseline: "http://www.godbolt.me/p2"
+  new: "http://www.godbolt.me/p3"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:
   - 320
-  - 600
-  - 768
   - 1024
-  - 1280
 
 #Type page URL paths below, here are a couple of examples
 paths:
   home: /
-  uk_index: /uk
 
 #Amount of fuzz ImageMagick will use
 fuzz: '20%'
