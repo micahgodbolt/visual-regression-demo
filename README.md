@@ -28,3 +28,10 @@ wraith capture wraith.yaml
   brew install casperjs
 ```
 casperjs test phantom.js
+
+- Basic Comparison
+- Fighting the pushed down page
+- Complete Test Coverage
+  -  Simulating Clicks
+  -  Simulating Hovers
+- Mocking content
