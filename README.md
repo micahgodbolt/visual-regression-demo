@@ -24,7 +24,7 @@ wraith capture wraith.yaml
 
 #### Download some dependancies
 ```
-  git@github.com:Huddle/PhantomCSS.git
+  git clone git@github.com:Huddle/PhantomCSS.git
   brew install casperjs
 ```
 casperjs test phantom.js
