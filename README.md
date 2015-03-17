@@ -16,7 +16,11 @@ $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd vis
 #### Download Wraith
 ```
   gem install wraith
-  
+```
+
+#### Run Wraith
+
+```
   wraith capture wraith.yaml
 ```
 
@@ -32,8 +36,11 @@ $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd vis
 ```
   git clone git@github.com:Huddle/PhantomCSS.git
   brew install casperjs
-  
-  casperjs test phantom.js
+```
+
+#### Run PhantomCSS
+```
+casperjs test phantom.js
 ```
 
 
