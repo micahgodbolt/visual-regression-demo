@@ -5,17 +5,20 @@
 var phantomcss = require('./PhantomCSS/phantomcss.js');
 
 phantomcss.init({
-  screenshotRoot: './phantom_imgs/screenshots',
+  screenshotRoot: './phantom_imgs/baselines',
+  comparisonResultRoot: './phantom_imgs/results',
   failedComparisonsRoot: './phantom_imgs/failures',
   libraryRoot: './PhantomCSS/',
+  cleanupComparisonImages: false,
 });
 
 
 /*
   The test scenario
 */
-casper.start( 'http://www.godbolt.me/p2/' )
-//casper.start( 'http://www.godbolt.me/p3/' )
+
+//casper.start( 'http://www.godbolt.me/p2/' )
+casper.start( 'http://www.godbolt.me/p3/' )
 
 
 
@@ -23,6 +26,7 @@ casper.start( 'http://www.godbolt.me/p2/' )
 
 ////
 // Work In Action
+// A Basic Example
 /////
 
   .then(function() {
@@ -41,6 +45,7 @@ casper.start( 'http://www.godbolt.me/p2/' )
 
 ////
 // News List
+// Avoiding False Positives
 /////
 
   // .then(function() {
@@ -53,9 +58,27 @@ casper.start( 'http://www.godbolt.me/p2/' )
   // })
 
 
+////
+// Call To Action
+// Avoiding False Negatives
+/////
+
+  // .then(function() {
+  //   this.viewport(480, 1200);
+  //   phantomcss.screenshot('.call-to-action', 'call-to-action-480');
+  // })
+  // .then(function () {
+  //   this.viewport(1024, 768);
+  //   phantomcss.screenshot('.call-to-action', 'call-to-action-1024');
+  // })
+
+
+
+
 
 ////
 // Mobile Navigation
+// Interacting with the DOM
 ////
 
 
@@ -69,6 +92,7 @@ casper.start( 'http://www.godbolt.me/p2/' )
 
 ////
 // Link Hover
+// Moving the virtual mouse
 ////
 
 
@@ -82,6 +106,7 @@ casper.start( 'http://www.godbolt.me/p2/' )
 
 ////
 // Blog Posts
+// Creating consistant content to test
 ////
 
   // .then(function() {
@@ -123,7 +148,7 @@ casper.start( 'http://www.godbolt.me/p2/' )
 
   //   phantomcss.screenshot('.post-summary', 'blog-post');
 
-  // })
+  //})
 
 // Closing Semi Colon
 ;
