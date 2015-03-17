@@ -1,5 +1,9 @@
 # visual-regression-demo
 
+```
+$ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd visual-regression-demo
+```
+
 ## [Wraith](https://github.com/BBC-News/wraith)
 
 
@@ -12,9 +16,11 @@
 #### Download Wraith
 ```
   gem install wraith
+  
+  wraith capture wraith.yaml
 ```
 
-wraith capture wraith.yaml
+
 
 
 
@@ -26,8 +32,10 @@ wraith capture wraith.yaml
 ```
   git clone git@github.com:Huddle/PhantomCSS.git
   brew install casperjs
+  
+  casperjs test phantom.js
 ```
-casperjs test phantom.js
+
 
 - Basic Comparison
 - Fighting the pushed down page
