@@ -40,7 +40,7 @@ $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd vis
 
 #### Run PhantomCSS
 ```
-casperjs test phantom.js
+casperjs test phantom-tests.js
 ```
 
 
