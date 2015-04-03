@@ -48,19 +48,19 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Avoiding False Positives
 /////
 
-  // .then(function() {
-  //   this.viewport(480, 1200);
-  //   phantomcss.screenshot('.news-list', 'news-list-480');
-  // })
-  // .then(function () {
-  //   this.viewport(1024, 768);
-  //   phantomcss.screenshot('.news-list', 'news-list-1024');
-  // })
+  .then(function() {
+    this.viewport(480, 1200);
+    phantomcss.screenshot('.news-list', 'news-list-480');
+  })
+  .then(function () {
+    this.viewport(1024, 768);
+    phantomcss.screenshot('.news-list', 'news-list-1024');
+  })
 
 
 ////
 // Call To Action
-// Avoiding False Negatives
+// Avoiding False Nagatives
 /////
 
   // .then(function() {
@@ -74,13 +74,10 @@ casper.start( 'http://www.godbolt.me/p3/' )
 
 
 
-
-
 ////
 // Mobile Navigation
-// Interacting with the DOM
+// Finding Hidden Differences
 ////
-
 
   // .then(function() {
   //   this.viewport(480, 1200);
@@ -92,9 +89,8 @@ casper.start( 'http://www.godbolt.me/p3/' )
 
 ////
 // Link Hover
-// Moving the virtual mouse
+// Finding Interaction Differences
 ////
-
 
   // .then(function() {
   //   this.viewport(1024, 3500);
@@ -106,7 +102,7 @@ casper.start( 'http://www.godbolt.me/p3/' )
 
 ////
 // Blog Posts
-// Creating consistant content to test
+// Creating Consistant Content to Test
 ////
 
   // .then(function() {
