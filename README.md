@@ -43,10 +43,3 @@ $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd vis
 casperjs test phantom-tests.js
 ```
 
-
-- Basic Comparison
-- Fighting the pushed down page
-- Complete Test Coverage
-  -  Simulating Clicks
-  -  Simulating Hovers
-- Mocking content
