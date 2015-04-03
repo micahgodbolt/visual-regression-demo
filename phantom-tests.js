@@ -48,14 +48,14 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Avoiding False Positives
 /////
 
-  .then(function() {
-    this.viewport(480, 1200);
-    phantomcss.screenshot('.news-list', 'news-list-480');
-  })
-  .then(function () {
-    this.viewport(1024, 768);
-    phantomcss.screenshot('.news-list', 'news-list-1024');
-  })
+  // .then(function() {
+  //   this.viewport(480, 1200);
+  //   phantomcss.screenshot('.news-list', 'news-list-480');
+  // })
+  // .then(function () {
+  //   this.viewport(1024, 768);
+  //   phantomcss.screenshot('.news-list', 'news-list-1024');
+  // })
 
 
 ////
