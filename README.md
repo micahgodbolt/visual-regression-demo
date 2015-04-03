@@ -9,7 +9,7 @@ $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd vis
 
 #### Download some dependancies
 ```
-  brew install phantomjs
+  brew install phantomjs192
   brew install imagemagick
 ```
 
