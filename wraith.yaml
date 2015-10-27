@@ -11,8 +11,8 @@ directory: 'wraith_imgs'
 
 # Add only 2 domains, key will act as a label
 domains:
-  baseline: "http://www.godbolt.me/p2"
-  new: "http://www.godbolt.me/p3"
+  baseline: "http://127.0.0.1:5002/p2"
+  new: "http://127.0.0.1:5002/p3"
 
 #Type screen widths below, here are a couple of examples
 screen_widths:

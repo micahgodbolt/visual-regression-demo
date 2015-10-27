@@ -2,4 +2,7 @@
 PhantomCSS
 shots
 .DS_Store
-
+node_modules
+phantom_imgs/failures
+phantom_imgs/results
+wraith_imgs

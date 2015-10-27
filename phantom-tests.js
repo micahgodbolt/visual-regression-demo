@@ -17,8 +17,8 @@ phantomcss.init({
   The test scenario
 */
 
-//casper.start( 'http://www.godbolt.me/p2/' )
-casper.start( 'http://www.godbolt.me/p3/' )
+//casper.start( 'http://127.0.0.1:5002/p2' )
+casper.start( 'http://127.0.0.1:5002/p3' )
 
 
 
@@ -48,14 +48,14 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Avoiding False Positives
 /////
 
-  // .then(function() {
-  //   this.viewport(480, 1200);
-  //   phantomcss.screenshot('.news-list', 'news-list-480');
-  // })
-  // .then(function () {
-  //   this.viewport(1024, 768);
-  //   phantomcss.screenshot('.news-list', 'news-list-1024');
-  // })
+  .then(function() {
+    this.viewport(480, 1200);
+    phantomcss.screenshot('.news-list', 'news-list-480');
+  })
+  .then(function () {
+    this.viewport(1024, 768);
+    phantomcss.screenshot('.news-list', 'news-list-1024');
+  })
 
 
 ////
@@ -63,14 +63,14 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Avoiding False Nagatives
 /////
 
-  // .then(function() {
-  //   this.viewport(480, 1200);
-  //   phantomcss.screenshot('.call-to-action', 'call-to-action-480');
-  // })
-  // .then(function () {
-  //   this.viewport(1024, 768);
-  //   phantomcss.screenshot('.call-to-action', 'call-to-action-1024');
-  // })
+  .then(function() {
+    this.viewport(480, 1200);
+    phantomcss.screenshot('.call-to-action', 'call-to-action-480');
+  })
+  .then(function () {
+    this.viewport(1024, 768);
+    phantomcss.screenshot('.call-to-action', 'call-to-action-1024');
+  })
 
 
 
@@ -79,11 +79,11 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Finding Hidden Differences
 ////
 
-  // .then(function() {
-  //   this.viewport(480, 1200);
-  //   this.mouse.click('.mobile-control');
-  //   phantomcss.screenshot('.site-header', 'mobile-navigation');
-  // })
+  .then(function() {
+    this.viewport(480, 1200);
+    this.mouse.click('.mobile-control');
+    phantomcss.screenshot('.site-header', 'mobile-navigation');
+  })
 
 
 
@@ -92,11 +92,11 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Finding Interaction Differences
 ////
 
-  // .then(function() {
-  //   this.viewport(1024, 3500);
-  //   this.mouse.move('.button');
-  //   phantomcss.screenshot('.button', 'button');
-  // })
+  .then(function() {
+    this.viewport(1024, 3500);
+    this.mouse.move('.button');
+    phantomcss.screenshot('.button', 'button');
+  })
 
 
 
@@ -105,46 +105,46 @@ casper.start( 'http://www.godbolt.me/p3/' )
 // Creating Consistant Content to Test
 ////
 
-  // .then(function() {
-  //   this.viewport(1024, 768);
+  .then(function() {
+    this.viewport(1024, 768);
 
-  //   this.evaluate(function() {
-  //     var content = [
-  //       { selector: ".post-title a",
-  //         text: "Where we're going, we don't need roads"
-  //       },
-  //       { selector: ".published-date",
-  //         text: "October 21, 2015"
-  //       },
-  //       { selector: ".category-link",
-  //         text: "Flux Capacitor"
-  //       },
-  //       { selector: ".comment-count",
-  //         text: "1.21"
-  //       },
-  //       { selector: ".post-excerpt",
-  //         text: "There's that word again; \"heavy\". Why are things so heavy in the future? <a href='#'>more</a>"
-  //       },
-  //       { selector: ".info-container a",
-  //         text: "Dr. Emmett L. Brown"
-  //       },
-  //       { selector: ".position ",
-  //         text: "Doctor"
-  //       },
-  //       { selector: ".comment-count",
-  //         text: "1.21"
-  //       },
-  //     ]
-  //     for (i = 0; i < content.length; ++i) {
-  //       jQuery(content[i].selector).html(content[i].text);
-  //     }
-  //     jQuery('.photo-container .photo').attr("src", '../images/doc_brown.jpg');
+    this.evaluate(function() {
+      var content = [
+        { selector: ".post-title a",
+          text: "Where we're going, we don't need roads"
+        },
+        { selector: ".published-date",
+          text: "October 21, 2015"
+        },
+        { selector: ".category-link",
+          text: "Flux Capacitor"
+        },
+        { selector: ".comment-count",
+          text: "1.21"
+        },
+        { selector: ".post-excerpt",
+          text: "There's that word again; \"heavy\". Why are things so heavy in the future? <a href='#'>more</a>"
+        },
+        { selector: ".info-container a",
+          text: "Dr. Emmett L. Brown"
+        },
+        { selector: ".position ",
+          text: "Doctor"
+        },
+        { selector: ".comment-count",
+          text: "1.21"
+        },
+      ]
+      for (i = 0; i < content.length; ++i) {
+        jQuery(content[i].selector).html(content[i].text);
+      }
+      jQuery('.photo-container .photo').attr("src", '../images/doc_brown.jpg');
 
-  //   });
+    });
 
-  //   phantomcss.screenshot('.post-summary', 'blog-post');
+    phantomcss.screenshot('.post-summary', 'blog-post');
 
-  //})
+  })
 
 // Closing Semi Colon
 ;

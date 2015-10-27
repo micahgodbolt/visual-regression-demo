@@ -1,0 +1,23 @@
+{
+  "name": "@micahgodbolt/visual-regression-demo",
+  "version": "1.0.0",
+  "description": "``` $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd visual-regression-demo ```",
+  "main": "phantom-tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./dist -p 5002 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahgodbolt/visual-regression-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micahgodbolt/visual-regression-demo/issues"
+  },
+  "homepage": "https://github.com/micahgodbolt/visual-regression-demo#readme",
+  "devDependencies": {
+    "http-server": "^0.8.5"
+  }
+}
