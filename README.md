@@ -1,5 +1,7 @@
 # visual-regression-demo
 
+[PDF of slides available here](https://drive.google.com/file/d/0Bx_8rNRP18Eha3lpMGUyWWxGSjg/view?usp=sharing)
+
 ```
 $ git clone https://github.com/micahgodbolt/visual-regression-demo.git && cd visual-regression-demo
 ```
